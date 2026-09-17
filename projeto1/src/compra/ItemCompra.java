@@ -13,11 +13,10 @@ public class ItemCompra {
 		
 	public void Mostrar(){
 		System.out.println(
-			"Descrição: " + produto.getDescricao() +
-			" Preço " + produto.getPreco() +
-			" Quantidade " + getQuantidade() +
-			" Subtotal " + obterSubtotal()
-			
+			produto.getDescricao() +"\t\t"+
+			produto.getPreco() +"\t" +
+			getQuantidade() +"\t" +
+			obterSubtotal() +"\t"
 			);
 		}
 			

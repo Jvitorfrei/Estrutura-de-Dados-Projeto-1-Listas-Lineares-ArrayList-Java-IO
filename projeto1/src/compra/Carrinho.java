@@ -11,11 +11,16 @@ public class Carrinho {
     }
 
     public void mostrar() {
+
+        System.out.println("\tItem\t\tPreço\tQuantidade");
         for (int i=0; i<listaItens.size(); i++) {
-            ListaItens[i].mostrar();
+            System.out.println((i+1)+"\t"+ListaItens[i].mostrar());
+            
         }
 
-        System.out.println("Subtotal: "+ obterSubtotal());
+        System.out.println("Subtotal: " + obterSubtotal());
+        System.out.println("Desconto: " + obterValorDesconto());
+        System.out.println("Total: "+ obterTotal());
 
     }
 
