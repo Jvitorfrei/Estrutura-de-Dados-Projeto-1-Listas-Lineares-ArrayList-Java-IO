@@ -1,4 +1,4 @@
-packaged compra;
+package compra;
 
 public class ItemCompra {
 
@@ -15,18 +15,24 @@ public class ItemCompra {
 		System.out.println(
 			"Descrição: " + produto.getDescricao() +
 			" Preço " + produto.getPreco() +
-			" Quantidade " + produto.quantidade +
+			" Quantidade " + getQuantidade() +
 			" Subtotal " + obterSubtotal()
 			
 			);
 		}
-		
-		
+			
 	public double obterSubtotal() {
 		return produto.getPreco * quantidade;
 	
 	}
-		
+
+	public int getCodigo() {
+		return codigo;
+	}
+
+	public int getQuantidade() {
+		return quantidade;
+	}
 }
 		
 	
