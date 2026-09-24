@@ -11,11 +11,11 @@ public class ItemCompra {
 		}
 		
 	public void Mostrar() {
-		System.out.println(
-			produto.getDescricao() +"\t\t"+
-			produto.getPreco() +"\t" +
-			getQuantidade() +"\t" +
-			obterSubtotal() +"\t"
+		System.out.printf( "%-20.30s | R$%2.2f \t| %d \t| R$%2.2f%n",
+			produto.getDescricao(), 
+			produto.getPreco(), 
+			getQuantidade(), 
+			obterSubtotal()
 			);
 		}
 			

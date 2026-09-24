@@ -13,6 +13,7 @@ public class Carrinho {
     public void mostrar() {
         System.out.println("\tItem\t\tPreço\tQuantidade");
         for (int i=0; i<listaItens.size(); i++) {
+            System.out.print(i + " ");
             listaItens.get(i).Mostrar();
         }
 
