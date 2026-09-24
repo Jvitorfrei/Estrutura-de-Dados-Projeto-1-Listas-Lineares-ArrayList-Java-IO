@@ -5,7 +5,7 @@ public class Carrinho {
     private ArrayList<ItemCompra> listaItens;
     private double porcentagemDesconto;
 
-    public Carringo(ArrayList itens, double desc) {
+    public Carrinho(ArrayList itens, double desc) {
         listaItens = itens;
         porcentagemDesconto = desc;
     }
@@ -13,7 +13,7 @@ public class Carrinho {
     public void mostrar() {
         System.out.println("\tItem\t\tPreço\tQuantidade");
         for (int i=0; i<listaItens.size(); i++) {
-            System.out.println((i+1)+"\t"+ListaItens[i].mostrar());
+            listaItens.get(i).Mostrar();
         }
 
         System.out.println("Subtotal: " + obterSubtotal());
@@ -26,7 +26,7 @@ public class Carrinho {
         for (ItemCompra ic : listaItens) {
             subtotal += ic.obterSubtotal();
         }
-        return subTotal;
+        return subtotal;
     }
 
     public double obterValorDesconto() {

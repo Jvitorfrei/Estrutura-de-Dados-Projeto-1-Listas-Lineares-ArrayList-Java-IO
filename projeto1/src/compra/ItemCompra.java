@@ -10,7 +10,7 @@ public class ItemCompra {
 		this.quantidade = quantidade;	
 		}
 		
-	public void Mostrar(){
+	public void Mostrar() {
 		System.out.println(
 			produto.getDescricao() +"\t\t"+
 			produto.getPreco() +"\t" +
@@ -24,7 +24,7 @@ public class ItemCompra {
 	}
 
 	public int getCodigo() {
-		return codigo;
+		return produto.getCodigo();
 	}
 
 	public int getQuantidade() {
