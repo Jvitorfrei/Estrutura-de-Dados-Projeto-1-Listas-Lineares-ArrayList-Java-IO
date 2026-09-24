@@ -2,13 +2,12 @@ package compra;
 
 public class ItemCompra {
 
-	private int codigo;
+	private Produto produto;
 	private int quantidade;
 	
-	public ItemCompra(int codigo, int quantidade) {
-		this.codigo = codigo;
-		this.quantidade = quantidade;
-		
+	public ItemCompra(Produto produto, int quantidade) {
+		this.produto = produto;
+		this.quantidade = quantidade;	
 		}
 		
 	public void Mostrar(){
@@ -21,8 +20,7 @@ public class ItemCompra {
 		}
 			
 	public double obterSubtotal() {
-		return produto.getPreco * quantidade;
-	
+		return produto.getPreco() * quantidade;
 	}
 
 	public int getCodigo() {
