@@ -1,3 +1,7 @@
+// Guilherme Ferraz Cabral - 10749385
+// João Vitor Alves de Freitas - 10756078
+// Gustavo Ávila Santos - 10753199
+
 package compra;
 
 public class ItemCompra {

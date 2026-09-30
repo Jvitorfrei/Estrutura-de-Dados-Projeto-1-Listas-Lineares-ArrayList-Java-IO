@@ -1,3 +1,7 @@
+// Guilherme Ferraz Cabral - 10749385
+// João Vitor Alves de Freitas - 10756078
+// Gustavo Ávila Santos - 10753199
+
 import compra.*;
 import java.io.*;
 import java.util.ArrayList;
@@ -98,7 +102,6 @@ public class App {
 
         }
         br.close();
-
         return sb.toString();
     }
 
