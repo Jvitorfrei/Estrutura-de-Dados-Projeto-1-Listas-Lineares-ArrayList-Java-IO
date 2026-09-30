@@ -11,7 +11,7 @@ public class ItemCompra {
 		}
 		
 	public void Mostrar() {
-		System.out.printf( "%-20.30s | R$%2.2f \t| %d \t| R$%2.2f%n",
+		System.out.printf( "| %-40.40s | R$ %-6.2f| %-4d | R$ %2.2f%n",
 			produto.getDescricao(), 
 			produto.getPreco(), 
 			getQuantidade(), 

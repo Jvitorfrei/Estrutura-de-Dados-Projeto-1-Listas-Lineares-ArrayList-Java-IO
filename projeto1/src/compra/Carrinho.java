@@ -11,15 +11,31 @@ public class Carrinho {
     }
 
     public void mostrar() {
-        System.out.println("\tItem\t\tPreço\tQuantidade");
-        for (int i=0; i<listaItens.size(); i++) {
-            System.out.print(i + " ");
+        int n = listaItens.size();
+
+        int tam = 0;
+        long temp = 1;
+        while (temp <= n) {
+            tam++;
+            temp *= 10;
+        }
+        
+        String dis = "%0"+tam+"d ";
+
+
+        System.out.println("=========================================================================");
+        System.out.printf("%-2.2s"+"| %-40.40s | %-8.8s | %-4.4s | %s %n", " ","Item","Valor","Qtd","Total");
+
+        for (int i=0; i<n; i++) {
+            System.out.printf(dis, (i+1));
             listaItens.get(i).Mostrar();
         }
 
-        System.out.println("Subtotal: " + obterSubtotal());
-        System.out.println("Desconto: " + obterValorDesconto());
-        System.out.println("Total: "+ obterTotal());
+        System.out.println("-------------------------------------------------------------------------");
+        System.out.printf("\t\t\t\t\t\tSubtotal: R$% 2.2f%n" , obterSubtotal());
+        System.out.printf("\t\t\t\t\t\tDesconto: R$% 2.2f%n" , obterValorDesconto());
+        System.out.printf("\t\t\t\t\t\tTotal:    R$ %2.2f%n", obterTotal());
+        System.out.println("=========================================================================");
     }
 
     public double obterSubtotal() {
